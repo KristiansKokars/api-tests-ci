@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('build-docker-base') {
             steps {
-                sh -c "docker build -f Dockerfile_base -t kristianskokars/ubuntu_ruby_base:latest ."
-            }
+                sh -c 'docker build -f Dockerfile_base -t kristianskokars/ubuntu_ruby_base:latest .'
+            }   
         }
     }
 }
